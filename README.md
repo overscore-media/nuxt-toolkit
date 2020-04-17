@@ -4,7 +4,7 @@
 
 Live at https://nuxt-toolkit.overscore.media
 
-This site is by no means documentation; it's meant to serve as a proof-of-concept. See [our article on Dev.to]() and check out this site's code for more information. 
+This site is by no means documentation; it's meant to serve as a proof-of-concept. See [our article on Dev.to](https://dev.to/overscoremedia/going-deeper-with-nuxt-44j4) and check out this site's code for more information. 
 
 ## Includes:
 
