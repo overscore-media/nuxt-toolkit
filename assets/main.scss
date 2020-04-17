@@ -1,0 +1,118 @@
+.layout {
+  margin-top: 56px !important; // So the page content is shifted down by the navbar's height
+}
+
+// For Prism codeblocks
+code {
+  box-shadow: 0 !important;
+  &::before {
+    content: "" !important;
+  }
+}
+
+// For the photo gallery
+.pswp__bg {
+  background-color: #2f2f2f;
+}
+
+.my-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  figure {
+    flex-grow: 1;
+    min-width: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+    a {
+      img {
+        border-radius: 10px;
+        box-shadow: 5px 3px 5px #2f2f2f;
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 5px 3px 5px #c9c3b2;
+          transition: all 0.15s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+// For the video player
+div.plyr {
+  @media only screen and (min-width: 800px) {
+    max-height: 80vh !important;
+    max-width: 80vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+$light-background-plyr: #e2e2e2;
+$transparent-background-plyr: hsla(0, 0%, 0%, 0);
+$dark-background-plyr: #2f2f2f;
+$accent-plyr: #1818a7;
+$light-accent-plyr: #c9c3b2;
+
+.plyr__control--overlaid {
+  background-color: $light-background-plyr !important;
+  &:not(button[data-plyr="captions"], button[data-plyr="settings"], button[data-plyr="fullscreen"]) {
+    color: $dark-background-plyr !important;
+  }
+  &:hover {
+    background-color: $light-accent-plyr !important;
+    color: $accent-plyr !important;
+  }
+}
+
+div.plyr__volume {
+  button.plyr__control {
+    background-color: $transparent-background-plyr !important;
+    &:hover {
+      background-color: $light-background-plyr !important;
+    }
+  }
+}
+
+input {
+  &[id^="plyr-seek-"],
+  &[id^="plyr-volume"] {
+    color: $light-background-plyr !important;
+  }
+}
+
+button {
+  &[data-plyr="play"] {
+    color: $dark-background-plyr !important;
+    background-color: $light-background-plyr !important;
+    &:hover {
+      background-color: $light-background-plyr !important;
+    }
+  }
+
+  &[data-plyr="captions"],
+  &[data-plyr="settings"],
+  &[data-plyr="fullscreen"] {
+    background-color: $transparent-background-plyr !important;
+    &:hover {
+      background-color: $light-background-plyr !important;
+    }
+  }
+
+  &.plyr__controls__item,
+  &.plyr__control,
+  &.plyr__menu__container {
+    &:not(button[data-plyr="captions"], button[data-plyr="settings"], button[data-plyr="fullscreen"]) {
+      color: $dark-background-plyr !important;
+    }
+    &:hover {
+      &:not(div[id^="plyr-settings-"]) {
+        background-color: $light-accent-plyr !important;
+      }
+      color: $accent-plyr !important;
+    }
+  }
+
+  &.plyr__control::before {
+    background-color: $accent-plyr !important;
+  }
+}

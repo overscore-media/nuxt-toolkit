@@ -1,0 +1,117 @@
+.markdown-body {
+  background-color: #272727;
+  width: 100vw;
+  margin-top: 56px;
+  padding-top: 25px;
+  padding-bottom: 3.5rem;
+
+  .emoji {
+    height: 1em;
+    background-color: #272727 !important;
+    display: inline;
+  }
+
+  .mermaid {
+    width: 100vw;
+    svg {
+      width: 100vw;
+      display: block;
+      margin: auto;
+      text-align: center;
+      tspan.title {
+        font-size: 0.75rem !important;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  table {
+    padding-left: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  pre {
+    margin: auto;
+    code {
+      box-shadow: none !important;
+      &::before {
+        content: '' !important;
+      }
+    }
+  }
+
+  .toolbar-item {
+    color: #ffffff;
+  }
+
+  .youtube-video {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
+    @media only screen and (min-width: 800px) {
+      width: 50vw;
+    }
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .youtube-video::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+  }
+
+  .youtube-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
+    @media only screen and (min-width: 800px) {
+      width: 50vw;
+    }
+    height: 100%;
+  }
+
+  .comment-box {
+    background-color: #272727 !important;
+  }
+}
+
+.layout {
+  background-color: #272727;
+}
+
+.social-link {
+  background-color: #272727;
+  .container {
+    background-color: #272727;
+  }
+}
