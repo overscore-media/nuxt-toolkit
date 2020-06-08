@@ -60,7 +60,9 @@ export default {
   plugins: [
     '~/plugins/anime',
     { src: '~/plugins/clipboard', mode: 'client' },
-    { src: '~/plugins/disqus', mode: 'client' },
+    // Thanks https://dev.to/thelearneer for pointing
+    // out that this shouldn't be in client mode
+    '~/plugins/disqus',
     { src: '~/plugins/prism', mode: 'client' },
     { src: '~/plugins/vuex-persistence', mode: 'client' },
     { src: '~/plugins/gallery', mode: 'client' },
