@@ -23,7 +23,7 @@
     "nuxt": "^2.0.0",
     "particles.js": "^2.0.0",
     "plyr": "^3.5.10",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.21.0",
     "three": "^0.115.0",
     "url-loader": "^4.1.0",
     "v-runtime-template": "^1.10.0",
