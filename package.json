@@ -24,7 +24,7 @@
     "particles.js": "^2.0.0",
     "plyr": "^3.5.10",
     "prismjs": "^1.20.0",
-    "three": "^0.115.0",
+    "three": "^0.125.0",
     "url-loader": "^4.1.0",
     "v-runtime-template": "^1.10.0",
     "vue-animejs": "^2.1.1",
