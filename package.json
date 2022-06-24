@@ -18,7 +18,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "animejs": "^3.2.0",
     "core-js": "2",
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.5.0",
     "luxon": "^1.23.0",
     "nuxt": "^2.0.0",
     "particles.js": "^2.0.0",
